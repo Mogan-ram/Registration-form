@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaiKrishna</title>
+    <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+    <div class="home">
+        <h1>SAI KRISHNA HIGHER SECONARY SCHOOL</h1>
+        <div class="navi">
+        <ul>
+            <li>Home |</li>
+            <li>Admission |</li>
+            <li>Facilities |</li>
+            <li>Contat |</li>
+        </ul>
+        </div>
+    </div>
+    
+    <br>
+
+    <div class="welcome">
+        <h2><u>Welcome</u></h2>
+        <p>Welcome to Sai Krishna Higher Secondary School, where small class sizes and close relationships foster a nurturing environment for young minds to thrive. We believe in learning through hands-on exploration, and our students get their hands dirty exploring our onsite garden, participating in community service projects, and developing a deep understanding of our global ecosystem. With a commitment to academic excellence and environmental responsibility, Sai Krishna empowers its students to become confident, compassionate, and lifelong learners who make a positive impact on the world.
+        </p>
+    </div>
+    <br>
+
+    <div class="form">
+        <form action="#" method="post">
+            <h3 style="padding: 10px; background-color:cornsilk; display:flexbox " > Registration Form </h3>
+            <br>
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="name">Name</label>
+                    <input type="text" id="name"name="name"placeholder="Enter your name" required/>
+                </div>
+                
+                <br>
+                
+                <div class="user-input-box">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required/>
+                </div>
+                
+                <br>
+
+                <div class="user-input-box">
+                    <label for="food">Food</label>
+                    <input type="text" id="food" name="food" placeholder="Enter your Favorite food"/>
+                </div>
+
+                <br>
+
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"/>
+                </div>
+
+                <br>
+
+                <div class="user-input-box">
+                    <label for="gender">Gender</label>
+                    <select>
+                        <option value="Male">Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="disability-details-box">
+                    <label>Disability</label>
+                    <div class="disability-category">
+                        <input type="radio" name="yes" id="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="no" id="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="submit-btn">
+                    <button type="submit" class="btn" onclick="openPopup()">Register</button>
+                    <div class="popup" id="popup">
+                        <h2>Thank you</h2>
+                        <p>Your form has been submitted succesfully</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    </div>
+                </div>
+           
+        </form>
+    </div>
+
+    <br>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
+    </script>
+</body>
+</html>
